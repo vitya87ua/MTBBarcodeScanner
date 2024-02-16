@@ -35,6 +35,7 @@ typedef NS_ENUM(NSUInteger, MTBTorchMode) {
  *  @sa setCamera:error:
  */
 @property (nonatomic, assign, readonly) MTBCamera camera;
+@property (nonatomic, strong) AVCaptureDevice *captureDevice;
 
 /**
  *  Control the torch on the device, if present.
